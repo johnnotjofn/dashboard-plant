@@ -1,0 +1,43 @@
+@mixin disableUserSelect() {
+   user-select: none;
+}
+
+.plant-select {
+   @include disableUserSelect();
+   // position: absolute;
+   background-color: #fff;
+   width: 300px;
+   margin: 25px 0;
+   box-shadow: none;
+   border-radius: 10px;
+   transition: box-shadow 0.25s ease-in-out;
+   box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+
+   &:hover {
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+   }
+
+   .title {
+      font-weight: bolder;
+      padding-top: 20px;
+      font-size: 20px;
+      text-align: center;
+
+   }
+
+   img {
+      display: block;
+      text-align: center;
+      width: 200px;
+      height: 200px;
+      margin: 0 auto;
+      background-color: none;
+   }
+
+   .description {
+      font-style: italic;
+      text-align: center;
+      color: #a8a8a8;
+      padding: 10px 0;
+   }
+}

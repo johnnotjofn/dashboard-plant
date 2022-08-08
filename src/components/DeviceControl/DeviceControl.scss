@@ -1,0 +1,27 @@
+.device-control {
+
+   background-color: #4c957c;
+   border-radius: 0 0 10px 10px;
+   padding-bottom: 20px;
+
+   .form-group {
+      padding-top: 10px;
+
+      .form-label {
+         font-size: 20px;
+         color: white;
+         text-align: center;
+         font-weight: bolder;
+      }
+
+      .form-control-label {
+         margin: 5px auto;
+         width: 250px;
+         height: 100px;
+         background-color: white;
+         box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+         border-radius: 10px;
+
+      }
+   }
+}

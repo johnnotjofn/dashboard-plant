@@ -1,0 +1,58 @@
+@mixin theme($bg-color: #033323, $font-color: white) {
+   background: $bg-color;
+   color: $font-color;
+}
+
+.sidebar-container {
+   @include theme;
+   width: 80px;
+   height: 100vh;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   flex-direction: column;
+   position: fixed;
+   top: 0;
+   left: 0;
+
+   .corner {
+      width: 80px;
+      height: 80px;
+      background-color: #4BA064;
+      text-align: center;
+      line-height: 80px;
+
+      .corner-content-icon {
+         font-size: 30px;
+         // width: 80px;
+      }
+   }
+
+   .sidebar-menu {
+      height: calc(100vh - 80px);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+
+      .sidebar-tab {
+         height: 80px;
+         line-height: 80px;
+         color: #477565;
+         // margin: 20px 0;
+
+         &:hover {
+            color: white;
+         }
+
+         &.active {
+            color: white;
+         }
+
+         .sb-content-icon {
+            width: 80px;
+            font-size: 30px;
+         }
+      }
+   }
+}
