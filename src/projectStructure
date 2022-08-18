@@ -1,0 +1,19 @@
+# Component structure
+
+App
+|__SideBar (shown on everypage)
+|__NavBar (shown on everypage)
+|__Home
+|  |__PlantSelect
+|  |  |__DeviceControl
+|  |     |__FormGroup
+|  |        |__FormLabel
+|  |        |__FormControlLabel
+|  |        |  |__CustomizedSwitch (customized from Switch)
+|  |        |__FormControlLabel
+|  |           |__CustomizedSwitch (customized from Switch)
+|  |__Notification (wrapped with ErrorComponent)
+|  |__CurrentCondition
+|__History
+   |__DataTable
+      |__CustomDataTable (customized from DataGrid)

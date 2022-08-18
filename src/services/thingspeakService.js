@@ -1,7 +1,8 @@
 import instance from "../axios";
 
-const getData = () => {
-   return instance.get('farm')
+
+const getData = (obj) => {
+   return instance.get('farm', obj)
 }
 
 const postData = () => {
@@ -10,6 +11,8 @@ const postData = () => {
 const updateData = (device) => {
    return instance.patch(`/farm/status/?device=${device}`)
 }
+
+
 
 export {
    getData,

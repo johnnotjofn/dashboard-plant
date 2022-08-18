@@ -4,17 +4,18 @@ import tomato from '../../assets/img/tomato.gif'
 import DeviceControl from "../DeviceControl/DeviceControl";
 
 class PlantSelect extends React.Component {
-   state = {
-
-   }
-
    render() {
       return (
          <div className="plant-select">
             <div className="title">Tomato</div>
             <img src={tomato} alt="" />
             <div className="description">Sweet, acidy flavor and juicy</div>
-            <DeviceControl device={this.props.device} />
+            <DeviceControl
+               device={this.props.device}
+               auto={this.props.auto}
+               changeMode={this.props.changeMode}
+               changeLamp={this.props.changeLamp}
+               changePump={this.props.changePump} />
          </div>
       )
    }

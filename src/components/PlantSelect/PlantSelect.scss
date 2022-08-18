@@ -4,7 +4,6 @@
 
 .plant-select {
    @include disableUserSelect();
-   // position: absolute;
    background-color: #fff;
    width: 300px;
    margin: 25px 0;
@@ -12,6 +11,8 @@
    border-radius: 10px;
    transition: box-shadow 0.25s ease-in-out;
    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+   display: flex;
+   flex-direction: column;
 
    &:hover {
       box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -22,7 +23,6 @@
       padding-top: 20px;
       font-size: 20px;
       text-align: center;
-
    }
 
    img {

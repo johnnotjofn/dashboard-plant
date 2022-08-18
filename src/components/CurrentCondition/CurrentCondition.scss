@@ -7,9 +7,9 @@
    height: 200px;
    display: flex;
    flex-direction: row;
-   justify-content: center;
+   justify-content: flex-start;
    align-items: center;
-   gap: 30px;
+   gap: 20px;
 
 
    .condition {
@@ -36,10 +36,9 @@
       .value-container {
          // @include disableUserSelect();
          display: flex;
-         justify-content: center;
+         justify-content: space-around;
          flex-direction: row;
          align-items: center;
-         gap: 20px;
 
          span {
             font-size: 2rem;
@@ -47,7 +46,7 @@
          }
 
          .value {
-            font-size: 3rem;
+            font-size: 2.5rem;
             font-weight: 500;
             color: #449159;
             // user-select: none;
